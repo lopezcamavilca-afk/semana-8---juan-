@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo */
+body {
+    background-color: rgb(167, 132, 199);
+    text-align: center;
+    padding: 40px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgb(183, 153, 209);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+/* Títulos */
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Caja de enlaces */
+.links-box {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    background-color: white;
+    padding: 12px;
+    display: block;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #5a297c;
+    border: 2px solid #5a297c;
+    transition: 0.3s;
+}
+
+/* Hover animado */
+a:hover {
+    background-color: #5a297c;
+    color: white;
+}
+
+.texto-led {
+    font-size: 40px;
+    color: #fff;
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff;
+    animation: parpadeo 1.5s infinite alternate;
+}
+
+@keyframes parpadeo {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
